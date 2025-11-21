@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* Beautiful Ocean-Inspired Hospital Theme */
+:root {
+  /* Custom Ocean Blue Palette */
+  --color-primary-50: #CAF0F8;
+  /* Lightest ocean blue */
+  --color-primary-100: #ADE8F4;
+  /* Light ocean blue */
+  --color-primary-200: #90E0EF;
+  /* Soft ocean blue */
+  --color-primary-300: #48CAE4;
+  /* Medium light ocean blue */
+  --color-primary-400: #00B4D8;
+  /* Medium ocean blue */
+  --color-primary-500: #0096C7;
+  /* Main ocean blue */
+  --color-primary-600: #0077B6;
+  /* Deep ocean blue */
+  --color-primary-700: #023E8A;
+  /* Darker ocean blue */
+  --color-primary-800: #03045E;
+  /* Darkest ocean blue */
+  --color-primary-900: #021638;
+  /* Ultra dark blue */
+
+  /* Complementary grays and whites */
+  --color-secondary-50: #ffffff;
+  /* Pure white */
+  --color-secondary-100: #f8fafb;
+  /* Off white */
+  --color-secondary-200: #e8f4f8;
+  /* Very light blue-gray */
+  --color-secondary-300: #d1e7ed;
+  /* Light blue-gray */
+  --color-secondary-400: #9fb3c8;
+  /* Medium blue-gray */
+  --color-secondary-500: #64748b;
+  /* Standard gray */
+  --color-secondary-600: #475569;
+  /* Dark gray */
+  --color-secondary-700: #334155;
+  /* Darker gray */
+  --color-secondary-800: #1e293b;
+  /* Very dark gray */
+  --color-secondary-900: #0f172a;
+  /* Almost black */
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Beautiful animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Base styles */
+@layer base {
+  html {
+    font-family: var(--font-family-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+
+  /* Beautiful scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #6dc0ff;
+    border-radius: 4px;
+    margin: 12px;
+    padding-right: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3b93ff;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #006aff;
+  }
+}
